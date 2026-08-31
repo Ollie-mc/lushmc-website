@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LushMC — Survival, Duels, FFA and more. Start your adventure today.">
+  <title>LushMC — Minecraft Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-mark">L</span>
+      <span>Lush<span>MC</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#ranks">Ranks</a>
+      <a href="#crates">Crates</a>
+      <a href="#discord">Discord</a>
+    </nav>
+
+    <a class="nav-discord" href="https://discord.gg/2CfEqMfXgS" target="_blank" rel="noopener">
+      <span>Join Discord</span>
+      <span class="arrow">↗</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          LushMC Network
+        </div>
+
+        <h1>YOUR NEXT<br><span>ADVENTURE</span><br>STARTS HERE.</h1>
+
+        <p class="hero-text">
+          Build. Fight. Explore. Meet new people and create your own story
+          on LushMC.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="primary-btn" id="copyIp">
+            <span>Play LushMC</span>
+            <small>Click to copy IP</small>
+          </button>
+          <a class="secondary-btn" href="#about">
+            Explore Server <span>↓</span>
+          </a>
+        </div>
+
+        <div class="server-ip">
+          <span class="ip-label">SERVER IP</span>
+          <span id="serverIp">lushmcs.falix.gg</span>
+          <span class="copy-icon">⧉</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="ring ring-one"></div>
+        <div class="ring ring-two"></div>
+        <div class="leaf leaf-one">✦</div>
+        <div class="leaf leaf-two">✧</div>
+        <div class="minecraft-card">
+          <div class="card-top">
+            <span class="online-dot"></span>
+            <span>SERVER ONLINE</span>
+          </div>
+          <div class="big-l">L</div>
+          <div class="card-title">LUSH<span>MC</span></div>
+          <div class="card-subtitle">SURVIVAL • DUELS • FFA</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div>
+          <span class="section-kicker">DISCOVER LUSHMC</span>
+          <h2>Welcome to <span>LushMC!</span></h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            Jump into an exciting <strong>Survival world</strong>, test your skills
+            in <strong>Duels &amp; FFA</strong>, climb the ranks, unlock awesome
+            rewards from <strong>Crates</strong>, and discover much more waiting
+            for you to explore.
+          </p>
+          <p>
+            Whether you're here to build, fight, or have fun with friends,
+            there's something for everyone!
+          </p>
+
+          <div class="about-highlight">
+            <div class="highlight-icon">✦</div>
+            <div>
+              <strong>Join us and start your adventure today!</strong>
+              <span>A community built around Minecraft and good times.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mode-grid">
+          <article class="mode-card">
+            <div class="mode-icon">◈</div>
+            <h3>Survival</h3>
+            <p>Build, explore and make your own adventure.</p>
+          </article>
+          <article class="mode-card">
+            <div class="mode-icon">⚔</div>
+            <h3>Duels</h3>
+            <p>Challenge other players and prove your skills.</p>
+          </article>
+          <article class="mode-card">
+            <div class="mode-icon">✦</div>
+            <h3>FFA</h3>
+            <p>Jump into the fight and climb the leaderboard.</p>
+          </article>
+          <article class="mode-card">
+            <div class="mode-icon">◆</div>
+            <h3>More</h3>
+            <p>New content and features are always on the way.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RANKS -->
+    <section class="section store-section" id="ranks">
+      <div class="section-heading centered">
+        <span class="section-number">02</span>
+        <div>
+          <span class="section-kicker">SHOW OFF YOUR STATUS</span>
+          <h2>Choose your <span>Rank</span></h2>
+        </div>
+      </div>
+
+      <p class="section-intro">
+        Upgrade your experience with exclusive perks, cosmetics and special
+        server benefits.
+      </p>
+
+      <div class="rank-grid">
+        <article class="rank-card celestial">
+          <div class="rank-badge">✦</div>
+          <span class="rank-tier">PREMIUM RANK</span>
+          <h3>Celestial</h3>
+          <p class="rank-desc">Reach beyond the ordinary.</p>
+          <ul>
+            <li>Exclusive Celestial prefix</li>
+            <li>Special chat cosmetics</li>
+            <li>Extra server perks</li>
+            <li>Exclusive rank features</li>
+          </ul>
+          <div class="price-tag"><span>€9.99</span><small>EUR</small></div>
+        </article>
+
+        <article class="rank-card royal featured">
+          <div class="featured-label">POPULAR</div>
+          <div class="rank-badge">♛</div>
+          <span class="rank-tier">PREMIUM RANK</span>
+          <h3>Royal</h3>
+          <p class="rank-desc">Stand out from the crowd.</p>
+          <ul>
+            <li>Exclusive Royal prefix</li>
+            <li>Special chat cosmetics</li>
+            <li>Extra server perks</li>
+            <li>Exclusive rank features</li>
+          </ul>
+          <div class="price-tag"><span>€14.99</span><small>EUR</small></div>
+        </article>
+
+        <article class="rank-card mythic">
+          <div class="rank-badge">◆</div>
+          <span class="rank-tier">PREMIUM RANK</span>
+          <h3>Mythic</h3>
+          <p class="rank-desc">Become part of the legends.</p>
+          <ul>
+            <li>Exclusive Mythic prefix</li>
+            <li>Special chat cosmetics</li>
+            <li>Extra server perks</li>
+            <li>Exclusive rank features</li>
+          </ul>
+          <div class="price-tag"><span>€19.99</span><small>EUR</small></div>
+        </article>
+      </div>
+
+      <p class="store-note">
+        Ranks are currently unavailable. Our store is still being prepared. Check back soon for updates!
+      </p>
+    </section>
+
+    <!-- CRATES -->
+    <section class="section crates-section" id="crates">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <div>
+          <span class="section-kicker">REWARDS AWAIT</span>
+          <h2>Mystery <span>Boxes</span></h2>
+        </div>
+      </div>
+
+      <p class="section-intro left">
+        Discover LushMC's Mystery Boxes and add a little surprise to your next
+        adventure.
+      </p>
+
+      <div class="crate-grid">
+        <article class="crate-card">
+          <div class="crate-visual">
+            <div class="crate-box">
+              <div class="crate-lock">✦</div>
+            </div>
+          </div>
+          <div class="crate-info">
+            <span class="crate-amount">1×</span>
+            <h3>Mystery Box</h3>
+            <p>One mystery box for your next LushMC adventure.</p>
+            <div class="price-tag crate-price"><span>€2.99</span><small>EUR</small></div>
+          </div>
+        </article>
+
+        <article class="crate-card highlighted">
+          <div class="crate-visual">
+            <div class="crate-box">
+              <div class="crate-lock">✦</div>
+            </div>
+            <div class="mini-box">+</div>
+          </div>
+          <div class="crate-info">
+            <span class="crate-amount">3×</span>
+            <h3>Mystery Boxes</h3>
+            <p>A bundle of three mystery boxes for your adventure.</p>
+            <div class="price-tag crate-price"><span>€7.99</span><small>EUR</small></div>
+          </div>
+        </article>
+
+        <article class="crate-card">
+          <div class="crate-visual">
+            <div class="crate-box">
+              <div class="crate-lock">✦</div>
+            </div>
+            <div class="mini-box">+</div>
+            <div class="mini-box">+</div>
+          </div>
+          <div class="crate-info">
+            <span class="crate-amount">5×</span>
+            <h3>Mystery Boxes</h3>
+            <p>A larger bundle of five mystery boxes.</p>
+            <div class="price-tag crate-price"><span>€11.99</span><small>EUR</small></div>
+          </div>
+        </article>
+      </div>
+
+      <p class="store-note">
+        Mystery Boxes are currently unavailable. Our store is still being prepared. Stay tuned for their release!
+      </p>
+    </section>
+
+    <!-- DISCORD -->
+    <section class="discord-section section" id="discord">
+      <div class="discord-card">
+        <div class="discord-symbol">◉</div>
+        <div class="discord-copy">
+          <span class="section-kicker">STAY CONNECTED</span>
+          <h2>Join the <span>LushMC</span> Discord</h2>
+          <p>
+            Get updates, meet the community, report issues and stay up to date
+            with everything happening on LushMC.
+          </p>
+        </div>
+        <a class="discord-btn" href="https://discord.gg/2CfEqMfXgS" target="_blank" rel="noopener">
+          <span>dcd.gg/lushmcs</span>
+          <span>↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <span class="brand-mark">L</span>
+      <strong>Lush<span>MC</span></strong>
+    </div>
+    <p>© <span id="year"></span> LushMC. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#ranks">Ranks</a>
+      <a href="#crates">Crates</a>
+      <a href="https://discord.gg/2CfEqMfXgS" target="_blank" rel="noopener">Discord</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Server IP copied!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
