@@ -405,3 +405,8 @@ input:focus {
   }
 
 }
+.rank-card,
+.crate-card {
+  text-decoration: none;
+  color: inherit;
+}
