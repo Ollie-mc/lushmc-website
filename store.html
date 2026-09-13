@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LushMC Store</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="store.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Lush<span>MC</span></a>
+
+      <a href="index.html" class="back-button">
+        ← Back to Website
+      </a>
+    </div>
+  </nav>
+
+  <main class="store-container">
+
+    <div class="store-header">
+      <span class="store-label">LUSHMC STORE</span>
+      <h1>Complete Your Purchase</h1>
+      <p>Enter your Minecraft username to continue.</p>
+    </div>
+
+    <section class="checkout">
+
+      <div class="rank-preview">
+
+        <div class="rank-icon" id="rankIcon">★</div>
+
+        <div class="rank-info">
+          <span class="small-label">SELECTED RANK</span>
+          <h2 id="rankName">Celestial</h2>
+          <p id="rankDescription">
+            Unlock exclusive perks and stand out on LushMC.
+          </p>
+        </div>
+
+        <div class="rank-price" id="rankPrice">
+          €4.99
+        </div>
+
+      </div>
+
+      <div class="divider"></div>
+
+      <form id="purchaseForm">
+
+        <label for="username">Minecraft Username</label>
+
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your Minecraft username"
+            maxlength="20"
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="input-info">
+          <span id="usernameCounter">0 / 20</span>
+          <span>3–20 characters</span>
+        </div>
+
+        <p class="error-message" id="errorMessage"></p>
+
+        <button type="submit" class="checkout-button" id="checkoutButton">
+          Continue to Checkout
+          <span>→</span>
+        </button>
+
+      </form>
+
+      <div class="secure-note">
+        <span>🔒</span>
+        <p>Your Minecraft username is only used to identify your account.</p>
+      </div>
+
+    </section>
+
+    <p class="demo-note">
+      This is a visual store demo. No real payment will be processed.
+    </p>
+
+  </main>
+
+  <script src="store.js"></script>
+
+</body>
+</html>
