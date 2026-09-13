@@ -46,18 +46,27 @@ const mysteryBoxes = {
 
 const params = new URLSearchParams(window.location.search);
 
-const selectedRank = (
-  params.get("rank") || "celestial"
-).toLowerCase();
+const selectedRank = params.get("rank");
+const selectedProduct = params.get("product");
 
-const rank = ranks[selectedRank] || ranks.celestial;
+let item;
 
-document.getElementById("rankName").textContent = rank.name;
-document.getElementById("rankPrice").textContent = rank.price;
-document.getElementById("rankIcon").textContent = rank.icon;
-document.getElementById("rankDescription").textContent = rank.description;
+if (selectedProduct) {
+  const product = selectedProduct.toLowerCase();
 
-document.title = `${rank.name} — LushMC Store`;
+  item = mysteryBoxes[product] || mysteryBoxes.mystery1;
+} else {
+  const rank = (selectedRank || "celestial").toLowerCase();
+
+  item = ranks[rank] || ranks.celestial;
+}
+
+document.getElementById("rankName").textContent = item.name;
+document.getElementById("rankPrice").textContent = item.price;
+document.getElementById("rankIcon").textContent = item.icon;
+document.getElementById("rankDescription").textContent = item.description;
+
+document.title = `${item.name} — LushMC Store`;
 
 
 /* USERNAME VALIDATION */
@@ -135,7 +144,7 @@ form.addEventListener("submit", (event) => {
 
   alert(
     `Demo checkout\n\n` +
-    `Rank: ${rank.name}\n` +
+    `Product: ${item.name}\n` +
     `Minecraft Username: ${username}\n` +
     `Price: ${rank.price}\n\n` +
     `No payment has been processed.`
