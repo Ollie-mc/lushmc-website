@@ -21,6 +21,29 @@ const ranks = {
   }
 };
 
+const mysteryBoxes = {
+  mystery1: {
+    name: "Mystery Box",
+    price: "€2.99",
+    icon: "✦",
+    description: "One mystery box for your next LushMC adventure."
+  },
+
+  mystery3: {
+    name: "3× Mystery Boxes",
+    price: "€7.99",
+    icon: "✦",
+    description: "A bundle of three mystery boxes for your adventure."
+  },
+
+  mystery5: {
+    name: "5× Mystery Boxes",
+    price: "€11.99",
+    icon: "✦",
+    description: "A larger bundle of five mystery boxes."
+  }
+};
+
 const params = new URLSearchParams(window.location.search);
 
 const selectedRank = (
